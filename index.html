@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:62.7%;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies&Ratings</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+    <script type="text/javascript">
+      var cnt=0;
+        function editFunc(){
+           cnt++;
+           event.preventDefault();
+           console.log("hey i am inside the fn",cnt);
+           let div = document.createElement('div');
+           let divmoviename=document.createElement('div');
+           let divrating=document.createElement('div');
+           div.className="tablehead";
+           div.id = `div ${cnt}`;
+           divmoviename.className="movie";
+           divrating.className="rate";
+           divmoviename.innerHTML=`${cnt}. &nbsp;&nbsp;`+document.getElementById('moviename').value ;
+           divrating.innerHTML=document.getElementById('rating').value;
+           div.appendChild(divmoviename);
+           div.appendChild(divrating);
+           console.log(div.id);
+           console.log(divmoviename.innerHTML);
+           console.log(divrating.innerHTML);
+           div.className="tablehead";
+           document.body.appendChild(div);
+           document.getElementById("moviename").value='';
+           document.getElementById("rating").value='';
+        }
+    
+    </script>
+    <div class="fixedbar">
+        <div class="imdblogo">
+          <img src="IMDb.png" width="100%" height="100%"/>
+        </div>
+        <div class="fixedbartext"> Dashboard</div>
+    </div>
+    <div >
+    <div class="form">
+        <form onsubmit="editFunc()" >
+            <ul>
+            <li><label for="moviename">Movie Name:&nbsp;</label></li>
+            <li><input id="moviename" type="text" required/></li>
+            <li><label for="rating">Rating:&nbsp;</label></li>
+            <li><input id="rating" type="number" min="0" max="5.0" step="0.1" required/></li>
+            <li>&emsp;&emsp;<input class="btn" type="submit"  value="Submit"/></li>
+            </ul>
+        </form>
+    </div>
+    <div class="tablehead">
+        <div class="moviehead"><span class="number">#</span>&emsp;<span >Movie Name</span></div>
+        <div class="ratehead"><span>Rating</span></div>
+    </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(111, 192, 18);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(38, 22, 185, 0.87),
+      rgba(18, 18, 184, 0.911)
+    ),
+    url("https://th.bing.com/th/id/OIP.oMJNX6r8PCCrTu1gga5xFwHaDt?w=273&h=175&c=7&o=5&dpr=1.56&pid=1.7");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.fixedbar {
+  box-shadow: 1px 1px 8px white, 1px 1px 8px white;
+  position: fixed;
+  z-index: 2;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  display: flex;
+  background-color: rgb(10, 20, 161);
+}
+.imdblogo {
+  margin-left: 4rem;
+  float: left;
+  width: 10%;
+  height: 100%;
+}
+.fixedbartext {
+  padding-top: 2rem;
+  padding-right: 6rem;
+  height: 100%;
+
+  float: right;
+  color: wheat;
+  font-size: 4rem;
+  text-shadow: 1px 1px 2px wheat;
+}
+.form {
+  padding-top: 13rem;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+}
+#moviename {
+  margin-right: 6rem;
+}
+
+#rating {
+  width: 10rem;
+}
+.btn {
+  color: black;
+  font-weight: 700;
+  background-color: rgb(130, 233, 127);
+  border-radius: 13px;
+  height: 3rem;
+  width: 6rem;
+}
+.btn:hover {
+  color: white;
+  background-color: rgb(226, 80, 12);
+  border-radius: 20px;
+  transform: scale(1.3);
+  box-shadow: 1px 1px 2px black, 1px 2px 3px black, 1px 1px 4px black;
+  transition: 0.2s ease-in-out;
+}
+.form li {
+  color: rgb(30, 31, 29);
+  text-shadow: 1px 1px 2px gold, 1px 1px 2px gold, 1px 1px 2px gold,
+    1px 1px 2px gold, 1px 1px 2px gold, 1px 1px 2px gold, 1px 1px 2px gold,
+    1px 1px 2px gold, 1px 1px 2px gold, 1px 1px 2px gold, 1px 1px 2px gold,
+    1px 1px 2px gold, 1px 1px 2px gold, 1px 1px 2px gold, 2px 2px 3px gold,
+    2px 2px 3px gold, 2px 2px 3px gold, 1px 1px 2px gold;
+  list-style: none;
+  float: left;
+}
+.tablehead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+}
+.moviehead {
+  color: rgb(17, 15, 15);
+  background-color: wheat;
+  border: 1px solid red;
+  border-radius: 10px;
+  width: 30%;
+  text-align: left;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+.ratehead {
+  font-size: 4rem;
+  color: rgb(17, 15, 15);
+  background-color: wheat;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid red;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+}
+.movie {
+  font-size: 4rem;
+  color: red;
+  text-shadow: 1px 1px 2px white, 1px 1px 2px white, 1px 1px 2px white,
+    1px 1px 2px white;
+  box-shadow: 2px 2px 3px gold, 2px 2px 3px gold, 2px 2px 3px gold,
+    2px 2px 3px gold;
+  border: 1px solid red;
+  border-radius: 20px;
+  width: 30%;
+  text-align: left;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: Georgia;
+}
+.rate {
+  font-size: 4rem;
+  color: red;
+  text-shadow: 1px 1px 2px white, 1px 1px 2px white, 1px 1px 2px white,
+    1px 1px 2px white;
+  box-shadow: 2px 2px 3px gold, 2px 2px 3px gold, 2px 2px 3px gold,
+    2px 2px 3px gold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid red;
+  border-radius: 20px;
+  width: 30%;
+  text-align: center;
+  font-family: Georgia;
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 1px;
+  }
+  .imdblogo {
+    height: auto;
+  }
+  .fixedbartext {
+    font-size: 2.5rem;
+    padding-top: 0rem;
+  }
+  .form {
+    padding-top: 5rem;
+    height: fit-content;
+    border: 1px solid rgb(196, 29, 29);
+    display: flex;
+    justify-content: center;
+  }
+  .form li {
+    list-style: none;
+    float: unset;
+  }
+  .tablehead {
+    font-size: 2.5rem;
+  }
+  .moviehead,
+  .ratehead,
+  .movie,
+  .rate {
+    width: 45%;
+  }
+}
