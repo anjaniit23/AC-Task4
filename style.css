@@ -162,6 +162,7 @@ body {
   .form li {
     list-style: none;
     float: unset;
+    
   }
   .tablehead {
     display: flex;
@@ -176,4 +177,7 @@ body {
     height: fit-content;
     font-size: 1.5rem;
   }
+  .btn {
+margin-bottom:1rem;
+}
 }
