@@ -155,7 +155,6 @@ body {
   .form {
     padding-top: 5rem;
     height: fit-content;
-    border: 1px solid rgb(196, 29, 29);
     display: flex;
     justify-content: center;
   }
