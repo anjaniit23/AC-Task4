@@ -164,12 +164,16 @@ body {
     float: unset;
   }
   .tablehead {
-    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
   .moviehead,
   .ratehead,
   .movie,
   .rate {
     width: 45%;
+    height: fit-content;
+    font-size: 1.5rem;
   }
 }
